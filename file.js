@@ -13,8 +13,8 @@ var valueToInject = randomStringFromSomeRandomPlace;
 
 $(".my-class").html(valueToInject);
 
-$.post("my post request url thing", (response) => {
-    $(".my-class").html(response.message);
+$.post("ajax/test.html", (data) => {
+    $(".my-class").html(data);
 });
 
 // .text() should be fine
